@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+    <title>Paul Bailey Home Extensions</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>QUICK QUOTE</h2>
+                  
+        </div>
+
+        <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/quote">Quote</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+     <div class="mobile-nav">
+        <div class="menu-close">
+            <span></span>
+            <span></span>
+        </div>
+        <ul >
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/quote">Quote</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="quotes">
+
+        <div class="quote-selection">
+            <div class="quote-card standard-quote">
+                <div class="quote-header">
+                    <h3>STANDARD QUOTE</h3>
+                    <h5>FREE</h5>
+                    <span class="seperator"></span>
+                </div>
+                <div class="quote-description">
+                    <p>Full quotation to specified drawings with a waiting time of 7-10 days.
+                        (Depending on workload).</p>
+                </div>
+                <div class="quote-cta">
+                    <div class="enquire">
+                        <h3>ENQUIRE NOW</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-card premium-quote">
+                <div class="quote-header">
+                    <i class="fas fa-gem"></i>
+                    <h3>PREMIUM QUOTE</h3>
+                    <h5>£49.00 + VAT</h5>
+                    <span class="seperator"></span>
+                </div>
+                <div class="quote-description">
+                    <p>Full Quotation to specified drawings, with a waiting time of 24hours! Become number 1 on our quoting 
+                        work load. If a site visit is required, we will make an appointment within 24 hours.</p>
+                </div>
+                <div class="quote-cta">
+                    <div class="enquire">
+                        <h3>ENQUIRE NOW</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-card guide-price">
+                <div class="quote-header">
+                    <h3>GUIDE PRICE</h3>
+                    <h5>FREE</h5>
+                    <span class="seperator"></span>
+                </div>
+                <div class="quote-description">
+                    <p>We offer a basic guide price, this ideal for those who haven't got drawings.</p>
+                </div>
+                <div class="quote-cta">
+                    <div class="enquire">
+                        <h3>ENQUIRE NOW</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        
+    </section>
+    <section class="quote-instructions">
+        <div class="quote-instructions-container">
+            <h1>Quick Quote - for a next day detailed quotation!</h1>
+            <h3>Why wait 7-10 days for a quote?</h3>
+            <p>We provide construction Estimating services with a fast turnaround of 24hours at a affordable price of £49.00 + VAT</p>
+            
+            <div class="instruction-cards">
+                <div>
+                    <i class="fas fa-paperclip"></i>
+                    <h3>Attach your Drawings</h3>
+                    <p>Fill in the form below and attach all your necessary information and drawings and write a brief description of what you would like quoted and click Send.</p>
+                </div>
+                <div>
+                    <i class="fas fa-search"></i>
+                    <h3>Review</h3>
+                    <p>We will review your documents and let you know if we need anymore information. We will then pass this onto our estimating team who will begin quoting your building works. </p>
+                </div>
+                <div>
+                    <i class="fas fa-forward"></i>
+                    <h3>Quotation</h3>
+                    <p>Our estimating team will then quote your works to the specified information and drawings, then send it back to you with in 24 Hours! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <section class="quote-form">
+        <h1>REQUEST FORM</h1>
+        <!-- <form id="quote-form" action="/quote" method="POST" enctype="multipart/form-data"> -->
+        <form id="quote-form">
+            <label id="name-label" for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Full name" required></br>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email" required></br>
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text" placeholder="Address" required></br>
+            <label for="telephone">Telephone Number</label>
+            <input id="telephone" name="telephone" type="text" name="telephone" id="" placeholder="Telephone" required></br>
+            <label for="type">Option</label>
+            <select name="type" name="type" id="quote-type">
+                <option value="Premium Quote">Premium Quote</option>
+                <option value="Standard Quote">Standard Quote</option>
+                <option value="Guide Price">Guide Price</option>
+            </select>
+            <label for="message">Message</label>
+            <input id="message" name="message" type="text">
+            <h3>ATTACHMENTS</h3>
+            <input type="file" 
+                class="filePond"
+                name="filePond[]" 
+                multiple 
+                data-allow-reorder="true"
+                data-max-file-size="8MB"
+                data-max-files="6">
+            <input type="submit" id="submitButton" ></br>
+            <div id="paypal-button-container"></div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="ft ft-logo">
+                <h2>QUICK QUOTE</h2>
+            </div>
+
+            <div class="ft ft-address">
+
+                <h3>Essex Planning & Architectural Drawing</h3>
+                <p>Unit 16 Ilford Trading Estate</br>
+                    Basildon</br>
+                    Essex</br>
+                    SS14 3DR</br></br>
+                    TEL: 01277 532991 </br>
+                    Email: info@paulbailey.info</p>
+            </div>
+                
+            <div class="ft ft-socials">
+               <a href="https://www.facebook.com/pg/PaulBaileyHomeextensions/about/?ref=page_internal"><i class="fab fa-facebook-square"></i></a>
+               <a href="https://www.linkedin.com/in/paul-bailey-2a37276b/"><i class="fab fa-linkedin"></i></a>
+               <i class="far fa-envelope"></i>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <script src="/js/app.js"></script>
+   
+
+    <!-- Load FilePond library -->
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+  
+
+    <!-- Turn all file input elements into ponds -->
+    <script>
+        FilePond.registerPlugin(FilePondPluginFileEncode);
+        FilePond.parse(document.body);
+
+        const inputElement = document.querySelector('.filePond')
+
+        const pond = FilePond.create(inputElement, {
+            allowMultiple: true,
+            allowFileEncode: true,
+            name: "filePond[]"
+        });
+
+        pond.onaddfile = (err, item) => {
+            if (err) {
+                console.warn(err);
+                return;
+            }
+            const base64String = item.getFileEncodeBase64String();
+        }
+    </script>
+     <script src="/js/quote.js"></script>
+
+    <!-- Paypal SDK  -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AdLZv876NMQuWGEbuweNCaaN7Ot8JARoGmmkhI30CwOnpjYjV6cWh3RVs1c-UEait0BULVYNLLzibL1U&currency=GBP"></script>
+
+    <!-- Add the checkout buttons, set up the order and approve the order -->
+    <script>
+      paypal.Buttons({
+        // onInit is called when the button first renders
+        onClick: function() {
+            if(checkFormNotComplete()){
+                alert('Please complete all fields in the form.')
+                return false
+            }
+            return true;
+            
+        },
+          
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '00.01'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+            console.log(details);
+            sendQuote();
+            alert('quote request submitted')
+          });
+        }
+      }).render('#paypal-button-container'); // Display payment options on your web page
+    </script>
+
+
+
+</body>
+</html>
